@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+    /* display:inline-block; */
+    box-sizing: border-box;
+}
+.container-2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    /* display:inline-block; */
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+
+}
+.container-3{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    float: right;
+    /* display:inline-block; */
+    box-sizing: border-box;
+}
