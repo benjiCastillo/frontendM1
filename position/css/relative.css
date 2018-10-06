@@ -1,0 +1,33 @@
+.caja {
+    width: 100px;
+    height: 100px;
+    background: red;
+    display: inline-block;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+#dos {
+    position: relative;
+    top:20px;
+    right: 20px;
+    bottom: 5px;
+    background: blue;
+    z-index: 1;
+}
+
+#tres{
+    position: relative;
+    background: yellow;
+    right: 40px;
+}
+#cuatro {
+    position: relative;
+    top: 20px;
+    right: 80px;
+    background: green;
+    z-index: 1;
+}
+
+.caja:hover {
+    background: white !important;
+}

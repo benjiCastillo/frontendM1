@@ -1,0 +1,32 @@
+body {
+    padding: 5%;
+}
+
+.padre {
+    width: 100px;
+    height: 100px;
+    /* background: red; */
+    position: relative;
+    /* background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432); */
+    background: #8360c3;
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    background: linear-gradient(to right, #2ebf91, #8360c3);
+    border-radius: 50%;
+}
+
+.hijo {
+    width: 94px;
+    height: 94px;
+    /* background: white; */
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    background-image: url("../img/profile.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
