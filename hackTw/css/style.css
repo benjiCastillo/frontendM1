@@ -1,11 +1,9 @@
 body {
     background: #e7edf0;
     margin: 0;
-    font-family: 'Arimo', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.charm{
-    font-family: 'Charmonman', cursive;
-}
+
 nav {
     position: fixed;
     width: 100%;
@@ -19,6 +17,7 @@ nav ul {
     width: 500px;
     text-decoration: none;
     margin: 0;
+    padding-left: 65px;
 }
 
 nav ul li {
@@ -31,12 +30,20 @@ nav ul li a {
     display: block;
     color: #66757f;
     text-decoration: none;
-    transition: all .3s ease-in;
+    transition: border 0.1s ease 0s
 }
 
 nav ul li a span {
     float: left;
-    margin: 16px;
+    margin: 13px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav ul li a span .fas,
+.far {
+    margin-right: 7px;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -44,6 +51,67 @@ nav ul li a:hover {
     border-bottom: 3px solid #1c94e0;
 }
 
-.container{
+nav .links {
+    float: left;
+}
+
+nav .logo {
+    margin: 0 auto;
+    width: 51px;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+nav .logo img {
+    width: 23px;
+    display: block;
+    margin: auto;
+}
+
+.container {
     margin: 70px;
+}
+
+#bg-user {
+    height: 380px;
+    width: 100%;
+    margin-top: 49px;
+    background: #1c94e0;
+}
+
+#bg-user .content-bg-profile {
+    height: 320px;
+    width: 100%;
+    background: #3f51b5;
+}
+
+.container {
+    width: 590px;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    border-left: 1px solid #e6ecf0;
+    border-right: 1px solid #e6ecf0;
+}
+
+.container-tweet {
+    position: relative;
+    padding: 9px 12px 6px 12px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.tweet {
+    margin-left: 58px;
+}
+
+.profile-img {
+    background-color: rebeccapurple;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 3px;
+    margin-left: -58px;
+    position: absolute;
 }
