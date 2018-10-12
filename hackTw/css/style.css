@@ -77,13 +77,18 @@ nav .logo img {
     height: 380px;
     width: 100%;
     margin-top: 49px;
-    background: #1c94e0;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
 }
 
 #bg-user .content-bg-profile {
     height: 320px;
     width: 100%;
-    background: #3f51b5;
+    background: url('../img/background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -115,3 +120,80 @@ nav .logo img {
     margin-left: -58px;
     position: absolute;
 }
+
+.toolbar {
+    height: auto;
+    width: 590px;
+    margin-left: 50px;
+    margin: 0 auto;
+}
+
+.toolbar .toolbar-menu {
+    height: 58px;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.toolbar-menu .option {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #657786;
+    font-weight: bold;
+}
+
+.toolbar-menu .option-count {
+    color: #66757f;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.toolbar-menu:hover,
+.toolbar-menu:active {
+    border-bottom: 2px solid #1DA1F2;
+}
+
+.toolbar-menu:hover .option-count,
+.toolbar-menu:active .option-count {
+    color: #1DA1F2 !important;
+}
+
+.bg-profile {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    top: -100px;
+    left: 70px;
+}
+
+.bg-profile .img-profile {
+    background: url('../img/leonsito.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 6px;
+}
+
+
+/* .content-bg-profile {
+    width: 200px;
+    height: 200px;
+    background: #C9FFBF;
+    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
+    background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+    position: relative;
+    border-radius: 50%;
+} */
+
+;
