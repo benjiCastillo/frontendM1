@@ -11,6 +11,7 @@ nav {
     background-color: #ffffff;
     top: 0;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    z-index: 1000;
 }
 
 nav ul {
@@ -174,7 +175,7 @@ nav .logo img {
 }
 
 .bg-profile .img-profile {
-    background: url('../img/leonsito.jpg');
+    background: url('../img/dance.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
