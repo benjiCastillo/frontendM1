@@ -70,10 +70,6 @@ nav .logo img {
     margin: auto;
 }
 
-nav .user-xs {
-    display: none;
-}
-
 .container {
     margin: 70px;
 }
@@ -174,9 +170,10 @@ nav .user-xs {
     height: 200px;
     background: #fff;
     border-radius: 50%;
+    float: left;
     position: absolute;
     top: 222px;
-    left: 98px;
+    left: 90px;
 }
 
 .bg-profile .img-profile {
@@ -191,58 +188,47 @@ nav .user-xs {
     margin-top: 6px;
 }
 
-.info-user-mb {
+.user-xs {
+    display: none;
+}
+.info-user-mb{
     display: none;
 }
 
 /* responsive */
 
-/* dispositivos grandes(desktops, 992px and up) */
-
-@media (max-width: 992px) {
-    .box-left,
-    .box-center,
-    .box-right {
-        width: 50%;
-    }
-}
-
-/* dispositivos medianos(tablets, 768px and up) */
-
-@media (max-width: 768px) {
-    .box-left,
-    .box-center,
-    .box-right {
-        width: 100%;
-    }
-    #bg-user {
-        height: 130px;
-        margin-top: 45px;
-        margin-bottom: 25px;
-    }
-    #bg-user .content-bg-profile {
-        height: 130px;
+@media(max-width:768px) {
+    .links,
+    .logo {
+        display: none;
     }
     nav {
         height: 46px;
     }
-    nav .user-xs {
+    .user-xs {
         display: initial;
     }
-    nav .user-xs a {
+    .user-xs a {
         color: #2d2d2d;
         text-decoration: none;
         line-height: 3.1;
         margin-left: 28px;
-        font-weight: 800;
+        font-weight: bold;
     }
-    nav .user-xs a i {
+    .user-xs a i {
         margin-right: 20px;
         color: #1c94e0;
     }
-    .toolbar,
-    .links,
-    .logo {
+    #bg-user{
+        margin-bottom: 0px;
+    }
+    #bg-user , #bg-user .content-bg-profile{
+        height: 130px;
+    }
+    .container{
+        width: 100%;
+    }
+    .toolbar {
         display: none;
     }
     .bg-profile {
@@ -252,44 +238,26 @@ nav .user-xs {
         left: 11px;
         z-index: 100;
     }
-    .bg-profile .img-profile {
+    .bg-profile .img-profile{
         width: 84px;
         height: 84px;
-        margin-top: 3px;
+        margin: 3px;
     }
-    .container {
-        width: 100%;
-        margin-top: 10px;
-    }
-    .tweet-text {
-        font-size: .9rem;
-    }
-    .info-user-mb {
+    .info-user-mb{
         display: block;
         padding: 10px;
+        background: white;
+        padding-top: 32px;
+        margin-bottom: 20px;
     }
     .info-user-mb h4{
         margin-bottom: 5px;
     }
     .info-user-mb .nick-name,
-    .info-user-mb .date,
-    .info-user-mb p,
+    .info-user-mb .date ,
     .info-user-mb .date i{
-        color:#616161;
+        color: #616161;
         font-size: .9rem;
     }
-    .info-user-mb .date i {
-        margin-right: 5px;
-    }
 
-}
-
-/* dispositivos pequenos (smartphones) */
-
-@media (max-width: 544px) {
-    .box-left,
-    .box-center,
-    .box-right {
-        background: #e91e63;
-    }
 }
