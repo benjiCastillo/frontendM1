@@ -1,4 +1,4 @@
-$blue : #1c94e0;
+$blue :#1c94e0;
 body {
     background: #e7edf0;
     margin: 0;
@@ -45,21 +45,24 @@ nav {
             }
         }
     }
-    .links {
-        float: left;
-    }
-    .logo {
-        margin: 0 auto;
-        width: 51px;
-        height: 100%;
-        padding: 15px;
-        box-sizing: border-box;
-        img {
-            width: 23px;
-            display: block;
-            margin: auto;
-        }
-    }
+}
+
+nav .links {
+    float: left;
+}
+
+nav .logo {
+    margin: 0 auto;
+    width: 51px;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+nav .logo img {
+    width: 23px;
+    display: block;
+    margin: auto;
 }
 
 .container {
@@ -79,7 +82,7 @@ nav {
 #bg-user .content-bg-profile {
     height: 320px;
     width: 100%;
-    background: url('../img/banner.jpg');
+    background: url("../../src/img/banner.jpg");
     /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
@@ -138,7 +141,6 @@ nav {
     margin-top: 10px;
     color: #657786;
     font-weight: bold;
-    
 }
 
 .toolbar-menu .option-count {
@@ -170,7 +172,7 @@ nav {
 }
 
 .bg-profile .img-profile {
-    background: url('../img/dance.gif');
+    background: url("../../src/img/dance.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -191,7 +193,7 @@ nav {
 
 /* responsive */
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .links,
     .logo {
         display: none;
@@ -211,7 +213,7 @@ nav {
     }
     .user-xs a i {
         margin-right: 20px;
-        color: $blue;
+        color: #1c94e0;
     }
     #bg-user {
         margin-bottom: 0px;
