@@ -1,12 +1,18 @@
-document.body.onload = createTweet;
+this.initializeLocalStore();
 function createTweet() {
+    //obtenemos el valor del tweet por el Id del elemento y el valor
+    var tweet = document.getElementById("tweet").value;
+    // obtenemos al contenedor principal
     var containerMain = document.getElementById("container-main");
-    
+    // creamos el contenedor  tweet
     var tweetContainer = document.createElement("div");
+    //creamos el atributo de class
     var tweetContainerAtribute = document.createAttribute("class");
+    //le asignamos un valor al atributo 
     tweetContainerAtribute.value = "container-tweet";
+    // asignamos el atributo class con valor al contenedor tweet
     tweetContainer.setAttributeNode(tweetContainerAtribute);
-
+    // anadimos la estructura del tweet al contenedor de tweet
     tweetContainer.innerHTML = '<div class="tweet">' +
         '<div class="account">' +
         '<div class="profile-img">' +
@@ -16,8 +22,7 @@ function createTweet() {
         '<small class="time"> 6h</small>' +
         '</div>' +
         '<div class="tweet-text">' +
-        ' <p>Hola' +
-        '</p>' +
+        ' <p>' + tweet + '</p>' +
         '</div>' +
         '</div>';
     //insertar antes
@@ -26,4 +31,21 @@ function createTweet() {
 
     //insertar al ultimo
     // containerMain.appendChild(tweetContainer);
+}
+
+
+function initializeLocalStore() {
+    store = {
+        set: function (key, value) {
+            localStorage.setItem(key, JSON.stringify(value));
+        },
+        get: function (key) {
+            var data = localStorage[key];
+            if (data === undefined) throw 'Key no inicializada';
+            return JSON.parse(data);
+        },
+        remove: function (key) {
+            localStorage.removeItem(key);
+        }
+    }
 }
