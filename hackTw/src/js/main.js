@@ -1,4 +1,4 @@
-this.initializeLocalStore();
+
 function createTweet() {
     //obtenemos el valor del tweet por el Id del elemento y el valor
     var tweet = document.getElementById("tweet").value;
@@ -34,18 +34,10 @@ function createTweet() {
 }
 
 
-function initializeLocalStore() {
-    store = {
-        set: function (key, value) {
-            localStorage.setItem(key, JSON.stringify(value));
-        },
-        get: function (key) {
-            var data = localStorage[key];
-            if (data === undefined) throw 'Key no inicializada';
-            return JSON.parse(data);
-        },
-        remove: function (key) {
-            localStorage.removeItem(key);
-        }
-    }
-}
+
+
+
+
+
+
+
