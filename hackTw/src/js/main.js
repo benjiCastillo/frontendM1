@@ -2,7 +2,7 @@
 
 var store = {
     get:function(key){
-        var data = localStorage.getItem(key);
+        var data = sessionStorage.getItem(key);
         if(data === undefined){
             return null;
         }else{
@@ -14,14 +14,14 @@ var store = {
         var tweets = [];
         if(data){
             data.push(tweet);
-            return localStorage.setItem(key,Json.stringify(data));
+            return sessionStorage.setItem(key,JSON.stringify(data));
         }else{
             tweets.push(tweet);
-            return localStorage.setItem(key, JSON.stringify(tweets));
+            return sessionStorage.setItem(key, JSON.stringify(tweets));
         }
     },
     remove:function(key){
-        return localStorage.removeItem(key);
+        return sessionStorage.removeItem(key);
     }
 }
 
@@ -69,14 +69,14 @@ function render(){
         listTweet.innerHTML = "";
         for (var index = 0; index < tweets.length; index++) {
             var tweet = tweets[index];
-            listTweet.innerHTML +='<div class="container-tweet">'+
+            listTweet.innerHTML +='<div class="container-tweet animated fadeIn">'+
             '<div class="tweet">' +
             '<div class="account">' +
             '<div class="profile-img">' +
             '</div>' +
             '<span class="name">'+tweet.name+'</span>' +
             '<span class="userName">'+tweet.username+'</span>' +
-            '<small class="time">'+tweet.time+'</small>' +
+            '<small class="time">  '+this.diffMin(tweet.time)+'m</small>' +
             '</div>' +
             '<div class="tweet-text">' +
             ' <p>' + tweet.tweet + '</p>' +
@@ -105,6 +105,10 @@ function createTweet(){
 }
 
 
-
+function diffMin(hour){
+    var now = moment(new Date);
+    var hour = moment(hour);
+    return now.diff(hour,'minutes');_
+}
 
 
